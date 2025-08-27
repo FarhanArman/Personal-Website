@@ -1,0 +1,107 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at center, 
+                rgb(199, 229, 243) 0%,      
+                rgb(201, 205, 221) 100%); 
+    font-family: Nunito, sans-serif;
+}
+
+/* Navbar */
+.Navbar {
+    display: flex;
+    justify-content: center; /* center links */
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+/* Burger button */
+/* Burger button */
+.burger {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    user-select: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+/* Nav links container */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #909090;
+}
+
+/* Head Section */
+.Head {
+    min-height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.Head .name h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+}
+
+.Head .name p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem;
+    color: #34495e;
+}
+
+/* Mobile version */
+@media (max-width: 768px) {
+    .Navbar {
+        justify-content: flex-start; /* align burger left */
+    }
+
+    .burger {
+        display: block; /* show burger */
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: white;
+        text-align: center;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}

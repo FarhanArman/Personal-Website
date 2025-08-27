@@ -1,0 +1,305 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, 
+              rgb(199, 229, 243) 0%,      
+              rgb(201, 205, 221) 100%); 
+  font-family: Nunito, sans-serif;
+}
+
+/* Navbar */
+.Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+  z-index: 1000; /* keeps it in front */
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  font-family: Nunito;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #909090;
+}
+
+.burger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+/* Research Section */
+.Research {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.Research .title {
+  font-family: Nunito;
+  color: #2c3e50;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.Research .card-wrapper {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.Research .swiper-pagination,
+.Research .swiper-button-prev,
+.Research .swiper-button-next {
+  --swiper-navigation-size: 22px;
+  color: black; /* solid black arrow */
+  font-weight: bold; /* makes it look thicker */
+}
+
+.card-title {
+  color: black;
+  font-family: Light Quicksand;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  height: 460px;                 
+  display: flex;                 
+  flex-direction: column;        
+  justify-content: space-between;    
+  
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  
+  user-select: none;
+  padding: 18px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #5c6bc0;
+}
+
+.card-list .card-link .card-image {
+  margin: 10px auto;
+  width: 90%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  border: 1px solid black;
+  color: black;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  border: 1px solid #5c6bc0;
+  color: white;
+  background: #5c6bc0;
+}
+
+/* Design Section */
+.design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.design .title {
+  font-family: Nunito;
+  color: #2c3e50;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.design h2 {
+  font-family: Light Quicksand;
+  color: black;
+  text-align: center;
+}
+
+.design .linked-anti-nganggur,
+.design .linked-palorant {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: 0.4s ease;
+  padding: 20px;
+}
+
+.design .linked-anti-nganggur img,
+.design .linked-palorant img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.design .linked-anti-nganggur:hover,
+.design .linked-palorant:hover {
+  border: 2px solid #5c6bc0;
+}
+
+.design .container {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* align vertically */
+  gap: 10px;                 /* spacing between title and button */
+  margin-top: 10px;
+}
+
+.design .container h2 {
+  flex: 1;                   /* let the title take the space */
+  text-align: center;        /* keep text centered */
+  font-size: 20px;
+}
+
+.design .card-button {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.design .linked-palorant:hover .card-button,
+.design .linked-anti-nganggur:hover .card-button {
+  border: 1px solid #5c6bc0;
+  color: white;
+  background: #5c6bc0;
+  transform: rotate(-45deg) scale(1.1); /* subtle zoom on hover */
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .Research .card-wrapper {
+    max-width: 700px;
+  }
+  .card-list .card-item .card-link {
+    height: 380px;
+  }
+  .card-list .card-link .card-image {
+    max-width: 85%;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+.Research .card-wrapper {
+    max-width: 300px; /* force container to shrink */
+  }
+
+  .card-list .card-item .card-link {
+    height: auto;
+    padding: 12px;
+  }
+
+  .card-list .card-link .card-image {
+    max-width: 80%;
+  }
+
+  .card-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: white;
+    text-align: center;
+    gap: 15px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .Research .title,
+  .design .title {
+    font-size: 36px;
+  }
+
+  .design h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Research .card-wrapper {
+    max-width: 260px;
+  }
+  .card-list .card-link .card-image {
+    max-width: 75%;
+  }
+  .card-title {
+    font-size: 14px;
+  }
+}

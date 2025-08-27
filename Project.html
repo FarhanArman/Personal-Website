@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Project.css">
+  <link rel="stylesheet" href="Font.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <title>Projects</title>
+</head>
+<body>
+  <nav class="Navbar">
+    <div class="burger">☰</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Project.html" class="active">Projects</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="Research">
+    <h1 class="title">Research</h1>
+    <div class="container swiper">
+      <div class="card-wrapper">
+        <ul class="card-list swiper-wrapper">
+          <li class="card-item swiper-slide">
+            <a href="Research/Analyzing Factors Affecting Electric.pdf" class="card-link">
+              <img src="Asset/Analyzing Factors Affecting Electric.png" alt="" class="card-image">
+              <h2 class="card-title">
+                Analyzing Factors Affecting Electric Vehicles In Germany
+              </h2>
+              <button class="card-button material-symbols-rounded">arrow_forward</button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="Research/Forecasting Nuclear Outage.pdf" class="card-link">
+              <img src="Asset/Forecasting Nuclear Outage Using Time Series Models.png" alt="" class="card-image">
+              <h2 class="card-title">
+                Forecasting Nuclear Outage Using Time Series Models
+              </h2>
+              <button class="card-button material-symbols-rounded">arrow_forward</button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="Research/Impact of Digital Consumption on Focus and Attention Span.pdf" class="card-link">
+              <img src="Asset/Impact of Digital Consumption on Focus and.png" alt="" class="card-image">
+              <h2 class="card-title">
+                Impact of Digital Consumption on Focus and Attention Span
+              </h2>
+              <button class="card-button material-symbols-rounded">arrow_forward</button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="Research/Analisis Python Penggunaan Musik Sebagai Pengobatan Gangguan Mental.docx" class="card-link">
+              <img src="Asset/Analisis Python Penggunaan Musik Sebagai Pengobatan Gangguan Mental.png" alt="" class="card-image">
+              <h2 class="card-title">
+                Python Analysis of Music Utilization as a Treatment for Mental Disorders
+              </h2>
+              <button class="card-button material-symbols-rounded">arrow_forward</button>
+            </a>
+          </li>
+          <li class="card-item swiper-slide">
+            <a href="Research/Sentimen Analisis Mengenai Sosial Media.pdf" class="card-link">
+              <img src="Asset/Sentimen Analisis Mengenai Sosial Media.png" alt="" class="card-image">
+              <h2 class="card-title">
+                An Analysis of Public Sentiment Concerning Social Media
+              </h2>
+              <button class="card-button material-symbols-rounded">arrow_forward</button>
+            </a>
+          </li>
+        </ul>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div> 
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="design">
+    <h1 class="title">Design</h1>
+    <div class="anti-nganggur">
+      <a href="https://www.figma.com/design/R3Wh66Tzpm5xW4NE9dzKom/AOL-SE?m=auto&t=Ze0FX1Qjy5rpucSc-6" class="linked-anti-nganggur">
+        <img src="Asset/antiNganggur.png" alt="" class="gambar-antir-nganggur">
+        <div class="container">
+          <h2>Original Website Design - Campus Project</h2>
+          <button class="card-button material-symbols-rounded">arrow_forward</button>
+        </div>
+      </a>
+    </div>
+    <div class="palorant">
+      <a href="https://www.figma.com/design/O6NYA39Um6iJivmgvsRiO3/FigmaPalorant?m=auto&t=Ze0FX1Qjy5rpucSc-6" class="linked-palorant">
+        <img src="Asset/paloran.jpeg" alt="">
+        <div class="container">
+          <h2>Recreating Valorant Website</h2>
+          <button class="card-button material-symbols-rounded">arrow_forward</button>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="Project.js"></script>
+  <script>
+    // Burger toggle
+    const burger = document.querySelector(".burger");
+    const navLinks = document.querySelector(".nav-links");
+    burger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

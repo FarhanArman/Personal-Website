@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Nunito;
+    src: url(Font/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Dancing Script;
+    src: url(Font/DancingScript-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Light Quicksand;
+    src: url(Font/Quicksand-Light.ttf);
+}
+
+@font-face {
+    font-family: Bold Quicksand;
+    src: url(Font/Quicksand-Bold.ttf);
+}

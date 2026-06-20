@@ -4,16 +4,18 @@
 }
 
 @font-face {
-    font-family: Dancing Script;
+    font-family: DancingScript;
     src: url(Font/DancingScript-VariableFont_wght.ttf);
 }
 
 @font-face {
-    font-family: Light Quicksand;
+    font-family: Quicksand;
     src: url(Font/Quicksand-Light.ttf);
+    font-weight: 300;
 }
 
 @font-face {
-    font-family: Bold Quicksand;
+    font-family: Quicksand;
     src: url(Font/Quicksand-Bold.ttf);
+    font-weight: 700;
 }

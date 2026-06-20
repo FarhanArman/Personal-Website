@@ -1,61 +1,3 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: radial-gradient(circle at center, 
-                rgb(199, 229, 243) 0%,      
-                rgb(201, 205, 221) 100%);
-    font-family: Nunito, sans-serif;
-}
-
-/* Navbar */
-.Navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 20px;
-    position: relative;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    font-family: Nunito;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.nav-links a.active,
-.nav-links a:hover {
-    color: #909090;
-}
-
-/* Burger */
-.burger {
-    font-size: 28px;
-    cursor: pointer;
-    display: none;
-    user-select: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 15px;
-    left: 20px;
-}
-
-/* Intro section */
 .introduction {
     display: flex;
     flex-direction: column;
@@ -76,7 +18,7 @@ body {
     gap: 30px;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* stack on small screens */
+    flex-wrap: wrap;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -96,16 +38,17 @@ body {
 }
 
 .introduction-text h2 {
-    font-family: Bold Quicksand;
+    font-family: Quicksand;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
 .introduction-text p {
     line-height: 1.6;
-    font-family: Light Quicksand;
+    font-family: Quicksand;
+    font-weight: 300;
 }
 
-/* Timeline */
 .timeline-container h1 {
     text-align: center;
     font-family: Nunito;
@@ -148,13 +91,13 @@ body {
     display: block;
 }
 
-/* Timeline structure */
 .timeline1 {
     margin: 0 auto;
     max-width: 750px;
     display: grid;
     grid-template-columns: 1fr 3px 1fr;
-    font-family: Bold Quicksand;
+    font-family: Quicksand;
+    font-weight: 700;
     color: black;
 }
 
@@ -182,7 +125,8 @@ body {
 }
 
 .isi {
-    font-family: Light Quicksand;
+    font-family: Quicksand;
+    font-weight: 300;
     margin-top: 10px;
 }
 
@@ -190,29 +134,7 @@ body {
     margin-top: 30px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-    .burger {
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        flex-direction: column;
-        background: white;
-        text-align: center;
-        gap: 15px;
-        padding: 20px 0;
-        display: none;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
     .intro-container {
         flex-direction: column;
         text-align: center;
@@ -224,11 +146,11 @@ body {
     }
 
     .timeline1 {
-        grid-template-columns: 1fr; /* stack timeline vertically */
+        grid-template-columns: 1fr;
     }
 
     .timeline-middle {
-        display: none; /* remove vertical line on mobile */
+        display: none;
     }
 
     .timeline-date-right {
